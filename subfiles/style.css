@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ :root {
+    --bgcolor: rgb(243, 237, 237);
+    --navbg: #000000;
+}
+
+body {
+    background-color: var(--bgcolor);
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    background-color: var(--navbg);
+}
+
+.subject{
+    text-align: center;
+}
+.imgSec img {
+    width: 20vw;
+    margin: 0 auto;
+}
+
+.dwn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.opt {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    width: 95vw;
+    height: 8vh;
+    box-shadow: 0 5px 7px rgba(0, 0, 0, 0.1);
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 2px;
+}
+
+.opth {
+    margin-left: 20px;
+}
+
+.btn {
+    width: 10vw;
+    height: 6.5vh;
+    margin-right: 50px;
+    font-size: 0.9rem;
+    background-color: rgb(22, 255, 1);
+    /* background-color: #302323; */
+    color: rgb(8, 8, 8);
+    border-radius: 3px;
+    border: 0.6px solid black;
+    cursor: pointer;
+}
+.info {
+    margin-top: 25px !important;
+    margin: auto;
+    width: 95vw;
+    background-color: #000000;
+    color: white;
+    padding: 15px;
+    font-style: oblique;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    color: white;
+    background-color: #000000;
+    text-align: center;
+    padding: 10px 10px 5px 10px;
+    width: 100%;
+}
+footer span{
+    font-family: cursive;
+}
+@media screen and (max-width:450px) {
+    .imgSec img {
+        width: 50vw;
+    }
+    .btn {
+        margin-right: 16px;
+        width: 30vw;
+    }
+    .opth {
+        margin-left: 10px;
+    }
+   .left{
+      font-size: 25px;
+      }
+}
+
+@media screen and (max-width :750px) {
+    .navigation {
+        flex-direction: column;
+        margin-bottom: 15px;
+    }
+    .imgSec img {
+        width: 50vw;
+    }
+    .left {
+        flex-direction: row;
+        text-align: center;
+    }
+    .btn {
+        margin-right: 16px;
+        width: 31vw;
+        height: 35px;
+    }
+}
