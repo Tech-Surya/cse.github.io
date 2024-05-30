@@ -34,8 +34,11 @@ body {
     flex-direction: column;
     justify-content: space-between;
     margin-top: 15px;
+}
+
+.download-section{
     background-color: white;
-    /* height: 60vh; */
+    height: 60vh;
     padding: 0 80px;
 }
 
